@@ -1,0 +1,117 @@
+{% block body %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+    
+  </head>
+  <body>
+        
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+  <a class="navbar-brand" href="#">Coupon Test</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+</nav>
+
+<main role="main" class="container">
+  
+ 
+</main><!-- /.container -->
+
+
+
+    </body>
+</html>
+
+<div class="container">
+<div class="row">
+<!-- You can make it whatever width you want. I'm making it full width
+on <= small devices and 4/12 page width on >= medium devices -->
+<div class="col-xs-12 col-md-4">
+
+
+<!-- CREDIT CARD FORM STARTS HERE -->
+<div class="panel panel-default credit-card-box">
+    <div class="panel-heading display-table" >
+        <div class="row display-tr" >
+            <h3 class="panel-title display-td" >Payment Details</h3>
+            <div class="display-td" >                            
+                <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+            </div>
+        </div>                    
+    </div>
+    <div class="panel-body">
+        
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="cardNumber">CARD NUMBER</label>
+                            <div class="input-group">
+                                <input type="tel" class="form-control" name="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number"  />
+                                    <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                            </div>
+                    </div>                            
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-xs-7 col-md-7">
+                <div class="form-group">
+                    <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                    <input  type="tel"  class="form-control"  name="cardExpiry" placeholder="MM / YY" autocomplete="cc-exp" />
+                </div>
+            </div>
+            <div class="col-xs-7 col-md-7">
+                <div class="form-group">
+                    <label for="cardExpiry"><span class="visible-xs-inline">CVC Code</label>
+                    <input  type="tel"  class="form-control"  name="cardExpiry" placeholder="CVC" autocomplete="cc-exp" />
+                </div>
+            </div>
+        </div>
+        {{ form_start(payment_form, { 'attr': {'id': 'coupon'}}) }}
+        <div class="row">
+            <div class="col-xs-12">
+                    <div class="form-group">
+                        {{ form(payment_form ) }}
+                    </div>
+            </div>                        
+        </div>
+
+    
+    {{form_end(payment_form)}}
+</div>
+</div>            
+<!-- CREDIT CARD FORM ENDS HERE -->
+
+
+</div>            
+
+
+
+</div>
+</div>
+
+	<!-- If you're using Stripe for payments -->
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="{{ asset('assets/js/ajax.js')}}"></script>
+<script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+<script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+</body>
+{% endblock %}
