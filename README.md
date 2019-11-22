@@ -66,7 +66,7 @@ released under the MIT or BSD license.
 # Coupon
 # Requirements
    * **PHP** 7.1.16
-   * **insyallation de symfony3** : 
+   * **insyallation de symfony3.4** : 
  https://symfony.com/doc/3.3/setup.html
  # Vendor 
    * **tappez cette commande** " composer require " dans votre terminal et pour database-name: coupon les autres champs tappez juste entrer entrer
