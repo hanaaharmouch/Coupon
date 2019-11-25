@@ -3,9 +3,9 @@
 # Coupon
 # Requirements
    * **PHP** 7.1.16
-   * **insyallation de symfony3.4.35** :
+   * **installation de symfony3.4.35** :
     https://symfony.com/doc/3.4/setup.html
-   * **insyallation de symfony3.4.35** :
+   * **installation de composer** :
     https://getcomposer.org/download/ 
  # Vendor 
    * **tappez cette commande** " composer require " dans votre terminal et pour database-name: coupon les autres champs tappez juste entrer entrer
