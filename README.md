@@ -12,8 +12,7 @@
     https://symfony.com/doc/3.4/setup.html // la commande : php -r "file_put_contents('symfony', file_get_contents('https://symfony.com/installer'));"
 
    * **tappez cette commande** " composer require " dans votre terminal et pour database-name: coupon les autres champs tappez juste entrer entrer
-   * **Probablement vous allez rencontrer un problème de out of memory allez à Php7 dans votre wamp/bin et dans les fichiers php.ini php.ini.developement et php.ini.production changez memory_limit = 128 MO en memory_limit = -1 voyez les images dans mon dernier email
-   ** 
+   * **Probablement vous allez rencontrer un problème de out of memory allez à Php7 dans votre wamp/bin et dans les fichiers php.ini php.ini.developement et php.ini.production changez memory_limit = 128 MO en memory_limit = -1 voyez les images dans mon dernier email** 
    * **Après avoir changé toutes les memory_limit tappez cette commande :** 
    php -dmemory_limit=-1 c:\composer\composer.phar update
    * **Vérification** dans votre app/config verifiez le fichier parametres.yml( pas parametres.yml.dist)  et verifiez que le nom de la base de données est coupon
