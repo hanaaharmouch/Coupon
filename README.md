@@ -2,7 +2,7 @@
 
 # Coupon
 # Requirements
-   * **PHP** 7.1.16
+   * **Installez le wampServer et PHP** 7.1.16
    * **installation de composer** :
     https://getcomposer.org/download/ 
      * **Redémarrez la machine** assurez vous que les variables d'environnement existe sinon ajouter C:\wamp64\bin\php\php7.1.16 a PATH
