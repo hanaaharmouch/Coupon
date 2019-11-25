@@ -3,13 +3,14 @@
 # Coupon
 # Requirements
    * **PHP** 7.1.16
-   * **installation de symfony3.4.35** :
-    https://symfony.com/doc/3.4/setup.html
+   
    * **installation de composer** :
     https://getcomposer.org/download/ 
      * **Redémarrez la machine** :
  # Vendor 
    * **Placez votre projet dans c:/wamp/www** :
+   * **ouvrez le projet dans votre éditeur et installatez de symfony3.4.35** :
+    https://symfony.com/doc/3.4/setup.html
    * **tappez cette commande** " composer require " dans votre terminal et pour database-name: coupon les autres champs tappez juste entrer entrer
    * **Probablement vous allez rencontrer un problème de out of memory allez à Php7 dans votre wamp/bin et dans les fichiers php.ini php.ini.developement et php.ini.production changez memory_limit = 128 MO en memory_limit = -1** 
    * **Vérification** dans votre app/config verifiez le fichier parametres.yml( pas parametres.yml.dist)  et verifiez que le nom de la base de données est coupon
